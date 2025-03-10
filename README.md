@@ -24,7 +24,6 @@ python shipping_discount_calculator.py [input_file] [output_file] [options]
 ### Options
 
 - `--processes` or `-p`: Number of processes to use (default: 4 or CPU count, whichever is lower)
-- `--quiet` or `-q`: Suppress transaction output and only show summary
 
 ### Examples
 
