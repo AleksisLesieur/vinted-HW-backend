@@ -12,7 +12,9 @@ A high-performance, memory-efficient command-line tool for calculating shipping 
 
 ## Usage
 
+```python
 python shipping_discount_calculator.py [input_file] [output_file] [options]
+```
 
 ### Arguments
 
@@ -28,21 +30,29 @@ python shipping_discount_calculator.py [input_file] [output_file] [options]
 
 Process the default input file and display results to console:
 
+```python
 python shipping_discount_calculator.py
+```
 
 Process a specific input file and save results to an output file:
 
+```python
 python shipping_discount_calculator.py large_data.txt results.txt
+```
 
 Use a specific number of processing cores:
 
+```python
 python shipping_discount_calculator.py input.txt output.txt -p 2
+```
 
 ## Test Data Generation
 
 The repository includes a script to generate test data for benchmarking:
 
+```python
 python create_shipping_data.py
+```
 
 This will create a 1.5GB `input.txt` file with random shipping transactions to test the calculator.
 
@@ -130,3 +140,7 @@ To add a new discount rule:
 ## Testing
 
 This solution has been tested with files up to 1.5GB in size, processing millions of transactions efficiently. The parallel processing approach ensures good performance scaling with available CPU cores.
+
+```
+
+```
