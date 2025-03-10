@@ -10,19 +10,9 @@ A high-performance, memory-efficient command-line tool for calculating shipping 
 - **Beautiful UI**: Clean terminal interface with progress tracking and statistics
 - **Detailed Reporting**: Comprehensive statistics about processed transactions
 
-## Requirements
-
-Python 3.6 or higher with standard libraries. Optionally uses `psutil` for memory tracking if available.
-
-```
-pip install psutil
-```
-
 ## Usage
 
-```
 python shipping_discount_calculator.py [input_file] [output_file] [options]
-```
 
 ### Arguments
 
@@ -38,29 +28,21 @@ python shipping_discount_calculator.py [input_file] [output_file] [options]
 
 Process the default input file and display results to console:
 
-```
 python shipping_discount_calculator.py
-```
 
 Process a specific input file and save results to an output file:
 
-```
 python shipping_discount_calculator.py large_data.txt results.txt
-```
 
 Use a specific number of processing cores:
 
-```
 python shipping_discount_calculator.py input.txt output.txt -p 2
-```
 
 ## Test Data Generation
 
 The repository includes a script to generate test data for benchmarking:
 
-```
 python create_shipping_data.py
-```
 
 This will create a 1.5GB `input.txt` file with random shipping transactions to test the calculator.
 
@@ -102,11 +84,9 @@ Each line in the input file should contain:
 
 Example:
 
-```
 2015-02-01 S MR
 2015-02-03 L LP
 2015-02-05 S LP
-```
 
 ## Output Format
 
@@ -118,11 +98,9 @@ Each line of output includes:
 
 Example:
 
-```
 2015-02-01 S MR 1.50 0.50
 2015-02-03 L LP 6.90 -
 2015-02-05 S LP 1.50 -
-```
 
 ## Architecture
 
