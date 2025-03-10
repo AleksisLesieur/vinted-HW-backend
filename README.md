@@ -139,7 +139,3 @@ To add a new discount rule:
 ## Testing
 
 This solution has been tested with files up to 1.5GB in size, processing millions of transactions efficiently. The parallel processing approach ensures good performance scaling with available CPU cores.
-
-```
-
-```
